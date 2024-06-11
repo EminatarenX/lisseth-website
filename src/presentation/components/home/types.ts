@@ -7,5 +7,6 @@ export type Regalo = {
     name: string
     image: string
     available: string
+    urls: string[]
     userID?: string
 }

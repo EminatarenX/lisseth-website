@@ -2,9 +2,9 @@ import { Regalos } from "./Regalos";
 
 export const ListaDeRegalos = () => {
   return (
-    <div className="bg-white lg:mx-[300px] xl:mx-[500px]">
+    <div className="bg-white md:mx-[100px] lg:mx-[200px] xl:mx-[400px] ">
       <section className="flex flex-col items-center gap-10">
-        <div className="bg-[#1d7c7c] rounded-full p-6 ">
+        <div className="bg-[#53746E] rounded-full p-6 ">
           <h1 className="text-white text-4xl tracking-wider ">
             LISTA DE REGALOS
           </h1>
