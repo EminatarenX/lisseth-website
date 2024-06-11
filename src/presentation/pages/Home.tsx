@@ -16,7 +16,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
 
   const {
     register,
@@ -30,7 +30,7 @@ export default function Home() {
       telephone: data.phone,
     };
     try {
-      setLoading(true);
+    
       const user = await fetchService.post("/user", newUser);
       localStorage.setItem("user", JSON.stringify(user));
       handleClose();
@@ -38,9 +38,7 @@ export default function Home() {
       const err = error as AxiosError<{ message: string[] }>;
       const errorMessage = err.response?.data.message[0] || "Error desconocido"; // Asigna un mensaje predeterminado si no hay mensaje de error
       setError(errorMessage); // Ahora siempre pasamos un string a setError
-    } finally {
-      setLoading(false);
-    }
+    } 
   };
 
   useEffect(() => {

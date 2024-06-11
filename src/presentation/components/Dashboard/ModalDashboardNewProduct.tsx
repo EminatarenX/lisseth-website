@@ -22,7 +22,7 @@ export const ModalDashboardNewProduct = ({isOpenAddGift, setIsOpenAddGift}: Prop
     const {
       register,
       handleSubmit,
-      formState: { errors },
+      // formState: { errors },
     } = useForm<Inputs>();
   
     const onSubmit: SubmitHandler<Inputs> = async (data) => {
