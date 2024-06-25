@@ -9,7 +9,7 @@ export const Regalos=() =>{
 
   useEffect(() => {
     const fetchRegalos = async () => {
-      const data = await fetchService.get('/gift')
+      const data = await fetchService.get('/regalo')
       setRegalos(data)
     }
     fetchRegalos()
@@ -18,7 +18,7 @@ export const Regalos=() =>{
 
   return (
     regalos.length > 0 && (
-        <section className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mx-10  gap-3 py-10">
+        <section className={`grid lg:grid-cols-4 grid-cols-2 mx-5 gap-5 py-10 ${window.location.pathname == '/' && 'lg:px-32'}`}>
         {
             regalos.map( data => (
                <Regalo regalo={data} key={data.id}/>

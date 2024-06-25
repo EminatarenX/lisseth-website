@@ -16,7 +16,7 @@ export default function Home() {
   const [error, setError] = useState("");
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  // const [loading, setLoading] = useState(false);
+ 
 
   const {
     register,
@@ -26,8 +26,8 @@ export default function Home() {
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const newUser = {
-      fullname: data.name,
-      telephone: data.phone,
+      fullName: data.name,
+      phone: data.phone,
     };
     try {
     
@@ -35,6 +35,7 @@ export default function Home() {
       localStorage.setItem("user", JSON.stringify(user));
       handleClose();
     } catch (error: unknown) {
+      
       const err = error as AxiosError<{ message: string[] }>;
       const errorMessage = err.response?.data.message[0] || "Error desconocido"; // Asigna un mensaje predeterminado si no hay mensaje de error
       setError(errorMessage); // Ahora siempre pasamos un string a setError

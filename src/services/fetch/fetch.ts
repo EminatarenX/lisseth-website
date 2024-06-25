@@ -4,7 +4,7 @@ export class FetchService {
     private client: Axios
     constructor(){
         this.client = axios.create({
-            baseURL: 'http://localhost:3000/api/v1'
+            baseURL: 'http://localhost:3000/api'
         })
     }
 
@@ -39,5 +39,14 @@ export class FetchService {
         }, data)
 
         return response
+    }
+
+    async delete(path: string) {
+        const response = await this.client.delete(path)
+        return response.data
+    }
+    async patch(path: string, data: any) {
+        const response = await this.client.patch(path, data)
+        return response.data
     }
 }

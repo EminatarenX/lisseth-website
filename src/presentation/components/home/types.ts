@@ -9,4 +9,9 @@ export type Regalo = {
     available: string
     urls: string[]
     userID?: string
+    user?: {
+        id: string
+        fullName: string
+        phone: string
+    }
 }

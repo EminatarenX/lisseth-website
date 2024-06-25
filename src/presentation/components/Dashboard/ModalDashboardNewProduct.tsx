@@ -35,7 +35,7 @@ export const ModalDashboardNewProduct = ({isOpenAddGift, setIsOpenAddGift}: Prop
       formData.append('urls', data.urlc)
       
       try {
-        const data = await fetchService.post('/gift', formData)
+        const data = await fetchService.post('/regalo', formData)
         console.log(data)
         alert('Regalo agregado')
       } catch (error) {
