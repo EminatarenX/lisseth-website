@@ -1,3 +1,4 @@
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 export const Informacion = () => {
     const imagenes = [
@@ -36,10 +37,12 @@ export const Informacion = () => {
       NORTE <br /> TUXTLA GUTIERREZ, CHIAPAS, 29020 <br /> ENTRE CALLES: <br /> Guadalajara y
       san miguel
     </p>
-    <p className="text-center">Roberto zavala / Lisseth de los santos <br />
-    961 249 0244 / 811 589 8862</p>
+      <div className='flex justify-center'>
+      <p className=""><WhatsAppIcon  sx={{color: 'green'}}/> <a href='https://wa.me/+529612490244'>Roberto zavala:  961 249 0244</a><br />
+      <WhatsAppIcon  sx={{color: 'green'}}/><a href='https://wa.me/+528115898862'>Lisseth de los santos: 811 589 8862</a> </p>
+      </div>
     <div className="flex justify-center">
-    <p className="text-center p-1 rounded-full bg-[#53746E] mx-5 w-full lg:w-1/2 text-white uppercase text-lg">sI YA ENVIASTE TU REGALO O <br/>
+    <p className="text-center p-1 rounded-full bg-[#53746E] mx-5 w-full lg:w-1/2 text-white uppercase text-lg font-semibold">sI YA APARTASTE TU REGALO O <br/>
     TIENES ALGUNA DUDA, ENVIANOS UN WSP</p>
     </div>
     <img src="./thanks.png" alt="thanks" className="object-contain mx-5 lg:mx-32 mb-20" />
