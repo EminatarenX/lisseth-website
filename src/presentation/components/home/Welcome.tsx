@@ -12,7 +12,8 @@ export const Welcome = () => {
 
       <div className="relative flex flex-col items-center py-10 gap-10">
         {/* <img src="./title.png" alt="pagina" className="-mt-20 absolute w-full object-cover"/> */}
-        <h1 className="text-6xl great-vibes-regular lg:scale-[1.5]">Lisseth y <br /> Roberto</h1>
+        {/* <h1 className="text-6xl great-vibes-regular lg:scale-[1.5]">Lisseth y <br /> Roberto</h1> */}
+        <img src="./lissyrobert.png" alt="pagina" className="w-1/2 lg:w-1/3"/>
         <div className="border-y-2 border-black flex gap-10 ">
           <span className=" lg:text-xl font-semibold py-3 p-5 lg:pl-20 flex justify-center items-center" >SABADO</span>
           <span className=" border-x-2 border-black px-5 lg:px-14 py-3 lg:text-xl font-semibold">
@@ -27,8 +28,8 @@ export const Welcome = () => {
       <img src="./file.png" alt="plant" className="absolute -right-[610px] top-[50%] rotate-[230deg]"/>
       <img src="./file.png" alt="plant" className="absolute -right-[610px] top-[90%] rotate-[290deg]"/>
       <img src="./file.png" alt="plant" className="absolute -left-[610px] top-[90%] rotate-[230deg]"/> */}
-      <img src="./floor-right.png" alt="floor_right" className="absolute left-0 -bottom-60 lg:block hidden  lg:h-[650px]  lg:w-[300px] object-cover" />
-      <img src="./floor-left.png" alt="floor_right" className="absolute right-0 -bottom-40 lg:block hidden  lg:h-[650px]  lg:w-[300px] object-cover" />
+      {/* <img src="./floor-right.png" alt="floor_right" className="absolute left-0 -bottom-60 lg:block hidden  lg:h-[650px]  lg:w-[300px] object-cover" />
+      <img src="./floor-left.png" alt="floor_right" className="absolute right-0 -bottom-40 lg:block hidden  lg:h-[650px]  lg:w-[300px] object-cover" /> */}
     </section>
   );
 };
