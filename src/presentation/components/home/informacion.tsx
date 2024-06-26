@@ -23,7 +23,7 @@ export const Informacion = () => {
     <article className="grid lg:grid-cols-8 grid-cols-4 gap-5">
         {
             imagenes.map( (imagen, i) => (
-                <img src={`./${imagen.name}`} alt={imagen.name.split('.')[0]} key={i} className='object-contain h-20 w-20' />
+                <img src={`./${imagen.name}`} alt={imagen.name.split('.')[0]} key={i} className={`${i === 6 ? 'object-cover': 'object-cover'} h-20 w-20`} />
             ))
         }
     </article>
