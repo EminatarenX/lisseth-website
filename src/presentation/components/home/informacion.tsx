@@ -33,7 +33,7 @@ export const Informacion = () => {
       <a href='https://wa.me/+528115898862'>Lisseth de los santos: 811 589 8862</a> </p>
       </div>
     <div className="flex justify-center my-5">
-    <p className="text-center p-1 rounded-full bg-[#53746E] mx-5 w-full lg:w-1/2 text-white uppercase text-lg font-semibold">sI YA APARTASTE TU REGALO O <br/>
+    <p className="text-center p-1 rounded-full bg-[#53746E] mx-5 w-full lg:w-1/2 text-white uppercase text-lg">sI YA APARTASTE TU REGALO O <br/>
     TIENES ALGUNA DUDA, ENVIANOS UN WSP</p>
     </div>
     <img src="./thanks.png" alt="thanks" className="object-contain mx-5 lg:mx-32 mb-20" />
