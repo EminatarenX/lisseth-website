@@ -102,7 +102,7 @@ export default function Home() {
               className="w-full"
               type="submit"
             >
-              Success
+              Guardar
             </Button>
           </form>
         </Box>
