@@ -59,7 +59,6 @@ export const Regalo = ({ regalo }: IRegalo) => {
     const userId = JSON.parse(userStorage).id;
     Swal.fire({
      title: "¿Estás seguro?",
-      text: "Podrás ver el regalo apartado en tu perfil, puedes cambiar de opinión en cualquier momento",
       icon: 'question',
       showCancelButton: true,
       confirmButtonText: 'Sí, apartar',
